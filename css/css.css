@@ -1,7 +1,9 @@
-
+body{
+	overflow-x: hidden !important;
+}
 #logop {
  height: 30%;
-background-image: url("logosemfundo.png");
+background-image: url("../img/logosemfundo.png");
 background-repeat: no-repeat;
 background-position: top;
 background-size: contain;
@@ -11,7 +13,7 @@ background-size: contain;
    #caixa1p{
    height:60%;
    top:28%;
-   background-image: url("tela.png");
+   background-image: url("../img/tela.png");
    background-size: contain;
 background-repeat: no-repeat;
    position: absolute;
@@ -38,7 +40,7 @@ background-repeat: no-repeat;
    
    #slider1{
    position: absolute;
-   background-image:url("coruja.png");
+   background-image:url("../img/coruja.png");
    background-size: contain;
    background-repeat: no-repeat;
    height: 65%;
@@ -67,7 +69,7 @@ background-repeat: no-repeat;
    
    #slider2{
    position: absolute;
-   background-image:url("rapido.png");
+   background-image:url("../img/rapido.png");
    background-size: contain;
   background-repeat: no-repeat;
    height: 65%;
@@ -87,7 +89,7 @@ background-repeat: no-repeat;
    
    #slider3{
    position: absolute;
-   background-image:url("ligacao.png");
+   background-image:url("../img/ligacao.png");
    background-size: contain;
   background-repeat: no-repeat;
    height: 65%;
@@ -106,7 +108,7 @@ background-repeat: no-repeat;
    
    #slider4{
    position: absolute;
-   background-image:url("bemvindo.png");
+   background-image:url("../img/bemvindo.png");
   background-repeat: no-repeat;
    background-size: contain;
    height: 65%;
@@ -168,7 +170,7 @@ background-attachment: fixed;
 
 #logo {
  height: 35%;
-background-image: url("logosemfundo.png");
+background-image: url("../img/logosemfundo.png");
 background-repeat: no-repeat;
 background-position: top;
 background-size: contain;
