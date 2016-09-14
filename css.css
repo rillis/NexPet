@@ -1,0 +1,215 @@
+
+#logop {
+ height: 30%;
+background-image: url("logosemfundo.png");
+background-repeat: no-repeat;
+background-position: top;
+background-size: contain;
+   }
+   
+ 
+   #caixa1p{
+   height:60%;
+   top:28%;
+   background-image: url("tela.png");
+   background-size: contain;
+background-repeat: no-repeat;
+   position: absolute;
+    left: 18%;
+    width: 27%;
+   }
+     #textop{
+     height: 55%;
+   position: absolute;
+   float:right;
+   right: 18%;
+   width: 40%;
+
+   }
+   
+   #dscroll{
+   position:absolute;
+   height: 10%;
+   top: 91%;
+   left:18%;
+   width:64%;
+   
+   }
+   
+   #slider1{
+   position: absolute;
+   background-image:url("coruja.png");
+   background-size: contain;
+   background-repeat: no-repeat;
+   height: 65%;
+   top: 115%;
+   right:11%;
+   width: 30%
+   
+   }
+   
+   #tslider1{
+   position: absolute;
+   height:65%;
+   top: 119%;
+   left: 18%;
+   width: 40%;
+   }
+   
+   #tslider2{
+   position: absolute;
+   height: 65%;
+   top:198%;
+   right: 18%;
+   width: 40%;
+  
+   }
+   
+   #slider2{
+   position: absolute;
+   background-image:url("rapido.png");
+   background-size: contain;
+  background-repeat: no-repeat;
+   height: 65%;
+   top: 196%;
+   left: 13%;
+   width: 30%;
+   
+   }
+   
+   #tslider3{
+   position: absolute;
+   height:65%;
+   top: 282%;
+   left: 18%;
+   width: 40%;
+   }
+   
+   #slider3{
+   position: absolute;
+   background-image:url("ligacao.png");
+   background-size: contain;
+  background-repeat: no-repeat;
+   height: 65%;
+   top: 277%;
+   right:11%;
+   width: 30%
+   }
+   
+   #tslider4{
+   position: absolute;
+   height:65%;
+   top: 358%;
+   right: 18%;
+   width: 40%;
+   }
+   
+   #slider4{
+   position: absolute;
+   background-image:url("bemvindo.png");
+  background-repeat: no-repeat;
+   background-size: contain;
+   height: 65%;
+   top: 358%;
+   left: 13%;
+   width: 30%;
+	}
+   
+   #rodape{
+   position:absolute;
+   height: 10%;
+   top: 439%;
+   left:18%;
+   width:64%;
+   }
+   
+   t{
+  font-family:Century Gothic; text-align:center; color:#fff; font-size:40px; margin-top:0px;
+   }
+   
+   n{
+   font-family:Century Gothic; text-align:center; color:#fff; font-size:80px; margin-top:0px;
+   }
+   
+   v{
+   font-family:Century Gothic; text-align:center; color:#fff; font-size:30px; margin-top:0px;
+   }
+   
+   c{
+   font-family:Century Gothic; text-align:center; color:#fff; font-size:12px; margin-top:0px;
+   }
+   
+.wrapper
+{
+  max-width:30em;
+  margin:2em auto;
+}
+
+.scrollme
+{
+  perspective:600px;
+}
+
+.animateme
+{
+  transform-origin:center center center;
+}
+
+html{
+background: -moz-linear-gradient(273deg, rgba(13,115,68,1) 0%, rgba(13,115,68,1) 33%, rgba(0,128,128,1) 100%)repeat-X; /* ff3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(13,115,68,1)), color-stop(33%, rgba(13,115,68,1)), color-stop(100%, rgba(0,128,128,1)))repeat-X; /* safari4+,chrome */
+background: -webkit-linear-gradient(273deg, rgba(13,115,68,1) 0%, rgba(13,115,68,1) 33%, rgba(0,128,128,1) 100%)repeat-X; /* safari5.1+,chrome10+ */
+background: -o-linear-gradient(273deg, rgba(13,115,68,1) 0%, rgba(13,115,68,1) 33%, rgba(0,128,128,1) 100%)repeat-X; /* opera 11.10+ */
+background: -ms-linear-gradient(273deg, rgba(13,115,68,1) 0%, rgba(13,115,68,1) 33%, rgba(0,128,128,1) 100%)repeat-X; /* ie10+ */
+background: linear-gradient(177deg, rgba(13,115,68,1) 0%, rgba(13,115,68,1) 33%, rgba(0,128,128,1) 100%) repeat-X; /* w3c */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d7344', endColorstr='#008080',GradientType=0 ) repeat-X; /* ie6-9 */
+background-attachment: fixed;
+}
+
+#logo {
+ height: 35%;
+background-image: url("logosemfundo.png");
+background-repeat: no-repeat;
+background-position: top;
+background-size: contain;
+   }
+   
+   #texto{
+   height: 10%;
+   }
+   
+   #caixa{
+   height:30%;
+   }
+   
+input[type="password"] {
+  width: 350px;
+  padding: 20px 0px;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #f7f7f7;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background: #1FCE6D;
+  border: 0;
+  width: 350px;
+  height: 40px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background: #0f7445;
+}
+
+::-webkit-input-placeholder { /*fock que deixa as palavras do confirmar senha com cor */
+  color: #FFFFFF;
+  font-size: 12px;
+  }
