@@ -1,43 +1,85 @@
-body{
-	overflow-x: hidden !important;
-}
-#logop {
- height: 30%;
-background-image: url("../img/logosemfundo.png");
-background-repeat: no-repeat;
-background-position: top;
-background-size: contain;
+	body{
+		overflow-x: hidden !important;
+	}
+	.navbar{
+		position: absolute;
+		width: 95%;
+		left: 2.5%;
+		height:40px;	
+	}
+	.navbar > img{
+		float:left;
+		height:100%;
+		margin-right: 100px;	
+	}
+	.first{
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;	
+	}
+	.last{
+	-webkit-border-top-right-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	-moz-border-radius-bottomright: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;	
+	}
+	.navbar > span {
+		background-color:#018080;
+		font-family: Ubuntu;
+		font-weight: bold;
+		float: right;
+		line-height:40px;
+		vertical-align:middle;
+		padding-left:10px;
+		padding-right:10px;
+		border: 1px solid #000;
+		border-radius-left-top: 10px;
+	}
+	.navbar > i{
+		float: right;
+		line-height:40px;
+		vertical-align:middle;
+		padding-left:20px;
+		padding-right:10px;	
+	}
+   .front{
+	  height: 100%;
+	  width: 100%; 
    }
-   
- 
-   #caixa1p{
-   height:60%;
-   top:28%;
-   background-image: url("../img/tela.png");
-   background-size: contain;
-background-repeat: no-repeat;
-   position: absolute;
-    left: 18%;
-    width: 27%;
+   .front > img{
+	   position:absolute;
+	   top: 25%;
+	   left: 18%;
+	   bottom: 25%;
+	   height:50%;
    }
-     #textop{
-     height: 55%;
-   position: absolute;
-   float:right;
-   right: 18%;
-   width: 40%;
-
+   .front > span{
+	   font-family: Ubuntu;
+	   position:absolute;
+	   right: 15%;
+	   height: 100px;
+	   top:50%;
+	   margin-top:-100px;
+	   line-height: 100px;
+	   vertical-align: middle;
+	   font-size:25px;
    }
-   
-   #dscroll{
-   position:absolute;
-   height: 10%;
-   top: 91%;
-   left:18%;
-   width:64%;
-   
+   span > a{
+	   font-family: Ubuntu;
+	   padding: 15px;
+	   line-height: 53px;
+	   vertical-align:middle;
+	   background-color:#018080;
+	   color: #000;
+	   text-decoration:none;
+	   font-size: 20px;
+	   border-radius: 5px;
    }
-   
    #slider1{
    position: absolute;
    background-image:url("../img/coruja.png");
