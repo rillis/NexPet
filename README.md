@@ -1,7 +1,7 @@
 # NexPet
 Sistema de PetShops.
 
-[x] index.html
+- [x] index.html
 [ ] funcionamento.html
 [ ] petshops.php
 [ ] cadastro.php
