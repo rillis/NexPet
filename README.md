@@ -7,5 +7,6 @@ Sistema de PetShops.
 - [ ] cadastro.php
 - [ ] entrar.php
 - [ ] consultas.php
+- [ ] recuperar.php
 
 Atualmente no endereço: [nexpetapp](http://nexpetapp.com.br)
