@@ -54,7 +54,7 @@
    .front > img{
 	   position:absolute;
 	   top: 25%;
-	   left: 18%;
+	   left: 10%;
 	   bottom: 25%;
 	   height:50%;
    }
@@ -67,7 +67,16 @@
 	   margin-top:-100px;
 	   line-height: 100px;
 	   vertical-align: middle;
-	   font-size:25px;
+	   font-size:30px;
+   }
+   .roller{
+	   position: absolute;
+	   bottom: 15px; 
+	   font-family: Ubuntu;
+	   font-size: 20px;
+	   font-weight: bold;
+	   width:100%;
+	   text-align:center;
    }
    span > a{
 	   font-family: Ubuntu;
@@ -168,19 +177,19 @@
    }
    
    t{
-  font-family:Century Gothic; text-align:center; color:#fff; font-size:40px; margin-top:0px;
+  font-family:Ubuntu; text-align:center; color:#fff; font-size:40px; margin-top:0px;
    }
    
    n{
-   font-family:Century Gothic; text-align:center; color:#fff; font-size:80px; margin-top:0px;
+   font-family:Ubuntu; text-align:center; color:#fff; font-size:80px; margin-top:0px;
    }
    
    v{
-   font-family:Century Gothic; text-align:center; color:#fff; font-size:30px; margin-top:0px;
+   font-family:Ubuntu; text-align:center; color:#fff; font-size:30px; margin-top:0px;
    }
    
    c{
-   font-family:Century Gothic; text-align:center; color:#fff; font-size:12px; margin-top:0px;
+   font-family:Ubuntu; text-align:center; color:#fff; font-size:12px; margin-top:0px;
    }
    
 .wrapper
