@@ -1,5 +1,5 @@
 # NexPet
-Sistema de PetShops.
+##Sistema de PetShops.
 
 - [x] index.html
 - [ ] funcionamento.html
