@@ -172,7 +172,7 @@
    #rodape{
    position:absolute;
    height: 10%;
-   bottom: 439%;
+   top: 439%;
    left:18%;
    width:64%;
    }
