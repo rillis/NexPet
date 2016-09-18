@@ -35,6 +35,7 @@ function step(n){
     document.getElementById('success').style.top='500%';
     document.getElementById('success').style.left='100%';
   }
+  
   else if(n==3){
     document.getElementById('step1').style.top='0px';
     document.getElementById('step1').style.left='-100%';
