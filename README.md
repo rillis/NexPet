@@ -1,4 +1,4 @@
-# NexPet
+# NexPet.
 Sistema de PetShops.
 
 - [x] index.html
