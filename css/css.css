@@ -5,12 +5,12 @@
 		position: absolute;
 		width: 95%;
 		left: 2.5%;
-		height:40px;	
+		height:40px;
 	}
-	.navbar > img{
+	.navlogo{
 		float:left;
 		height:100%;
-		margin-right: 100px;	
+		margin-right: 100px;
 	}
 	.first{
 	-webkit-border-top-left-radius: 10px;
@@ -18,7 +18,7 @@
 	-moz-border-radius-topleft: 10px;
 	-moz-border-radius-bottomleft: 10px;
 	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;	
+	border-bottom-left-radius: 10px;
 	}
 	.last{
 	-webkit-border-top-right-radius: 10px;
@@ -26,9 +26,9 @@
 	-moz-border-radius-topright: 10px;
 	-moz-border-radius-bottomright: 10px;
 	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;	
+	border-bottom-right-radius: 10px;
 	}
-	.navbar > span {
+	.navitem {
 		background-color:#018080;
 		font-family: Ubuntu;
 		font-weight: bold;
@@ -38,18 +38,19 @@
 		padding-left:10px;
 		padding-right:10px;
 		border: 1px solid #007070;
-		border-radius-left-top: 10px;
+		text-decoration: none;
+		color:#000;
 	}
 	.navbar > i{
 		float: right;
 		line-height:40px;
 		vertical-align:middle;
 		padding-left:20px;
-		padding-right:10px;	
+		padding-right:10px;
 	}
    .front{
 	  height: 100%;
-	  width: 100%; 
+	  width: 100%;
    }
    .front > img{
 	   position:absolute;
@@ -71,7 +72,7 @@
    }
    .roller{
 	   position: absolute;
-	   bottom: 15px; 
+	   bottom: 15px;
 	   font-family: Ubuntu;
 	   font-size: 20px;
 	   font-weight: bold;
@@ -98,9 +99,9 @@
    top: 115%;
    right:11%;
    width: 30%
-   
+
    }
-   
+
    #tslider1{
    position: absolute;
    height:65%;
@@ -108,16 +109,16 @@
    left: 18%;
    width: 40%;
    }
-   
+
    #tslider2{
    position: absolute;
    height: 65%;
    top:198%;
    right: 18%;
    width: 40%;
-  
+
    }
-   
+
    #slider2{
    position: absolute;
    background-image:url("../img/rapido.png");
@@ -127,9 +128,9 @@
    top: 196%;
    left: 13%;
    width: 30%;
-   
+
    }
-   
+
    #tslider3{
    position: absolute;
    height:65%;
@@ -137,7 +138,7 @@
    left: 18%;
    width: 40%;
    }
-   
+
    #slider3{
    position: absolute;
    background-image:url("../img/ligacao.png");
@@ -148,7 +149,7 @@
    right:11%;
    width: 30%
    }
-   
+
    #tslider4{
    position: absolute;
    height:65%;
@@ -156,7 +157,7 @@
    right: 18%;
    width: 40%;
    }
-   
+
    #slider4{
    position: absolute;
    background-image:url("../img/bemvindo.png");
@@ -167,31 +168,31 @@
    left: 13%;
    width: 30%;
 	}
-   
+
    #rodape{
    position:absolute;
    height: 10%;
-   top: 439%;
+   bottom: 439%;
    left:18%;
    width:64%;
    }
-   
+
    t{
   font-family:Ubuntu; text-align:center; color:#fff; font-size:40px; margin-top:0px;
    }
-   
+
    n{
    font-family:Ubuntu; text-align:center; color:#fff; font-size:80px; margin-top:0px;
    }
-   
+
    v{
    font-family:Ubuntu; text-align:center; color:#fff; font-size:30px; margin-top:0px;
    }
-   
+
    c{
    font-family:Ubuntu; text-align:center; color:#fff; font-size:12px; margin-top:0px;
    }
-   
+
 .wrapper
 {
   max-width:30em;
@@ -226,15 +227,15 @@ background-repeat: no-repeat;
 background-position: top;
 background-size: contain;
    }
-   
+
    #texto{
    height: 10%;
    }
-   
+
    #caixa{
    height:30%;
    }
-   
+
 input[type="password"] {
   width: 350px;
   padding: 20px 0px;
@@ -266,3 +267,36 @@ input[type="submit"]:hover {
   color: #FFFFFF;
   font-size: 12px;
   }
+
+	.steps{
+		position: absolute;
+		display:inline;
+		top:20%;
+		left:10%;
+		width:80%;
+		height:50px;
+		background-color: blue;
+		line-height: 50px;
+		vertical-align: middle;
+	}
+	.steps > div{
+		display:inline;
+	}
+	.gap{
+		width:500px;
+		height:10px;
+		background-color: red;
+		padding-left:200px;
+		padding-top:10px;
+		padding-bottom:10px;
+	}
+	.step{
+		font-size: 20px;
+		font-family: Ubuntu;
+		padding: 5px;
+		border-radius:100%;
+		background-color: white;
+	}
+	.progress{
+
+	}
