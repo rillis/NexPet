@@ -308,6 +308,14 @@ input[type="submit"]:hover {
 		top: 0px;
 		left: 0px;
 	}
+	.step2{
+		transition: 0.5s;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 100%;
+		left: 0px;
+	}
 	.animal{
 		transition: 0.5s;
 		width: 100%;
@@ -374,4 +382,24 @@ input[type="submit"]:hover {
 		margin:0px !important;
 		margin-left: 5% !important;
 		margin-top: 10px !important;
+	}
+	.enviar{
+		padding:15px;
+		border-radius: 15px;
+		position: absolute;
+		font-size: 21px;
+		top: 50%;
+		right:25%;
+		background-color: #018080;
+		cursor: pointer;
+	}
+	.voltar{
+		padding:15px;
+		border-radius: 15px;
+		position: absolute;
+		font-size: 21px;
+		top: 50%;
+		left:25%;
+		background-color: #018080;
+		cursor: pointer;
 	}

@@ -5,12 +5,13 @@
     <link rel="stylesheet" type="text/css" href="css/fonts.css" />
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
     <link rel="stylesheet" type="text/css" href="css/set1.css" />
+    <script src="js/cadastro.js"></script>
   </head>
   <body style="overflow: hidden;">
 
     <div id="step1" class="step1">
       <div class="form">
-        <span class="cadastro">Cadastro usuário</span>
+        <span class="cadastro">Cadastro usuário (1/2)</span>
         <span class="input input--minoru">
 					<input class="input__field input__field--minoru" type="text" id="input-15" />
 					<label class="input__label input__label--minoru" for="input-15">
@@ -38,6 +39,18 @@
         <span class="input input--minoru">
 					<input class="input__field input__field--minoru" type="text" id="input-15" />
 					<label class="input__label input__label--minoru" for="input-15">
+						<span class="input__label-content input__label-content--minoru">Sexo</span>
+					</label>
+        </span>
+      </div>
+      <span class="enviar" onclick="step(2);"><i class="fa fa-arrow-right"></i></span>
+    </div>
+    <div id="step2" class="step2">
+      <div class="form">
+        <span class="cadastro">Cadastro usuário (2/2)</span>
+        <span class="input input--minoru">
+					<input class="input__field input__field--minoru" type="text" id="input-15" />
+					<label class="input__label input__label--minoru" for="input-15">
 						<span class="input__label-content input__label-content--minoru">Endereço</span>
 					</label>
         </span>
@@ -53,7 +66,33 @@
 						<span class="input__label-content input__label-content--minoru">Complemento</span>
 					</label>
         </span>
+        <span class="input input--minoru">
+					<input class="input__field input__field--minoru" type="text" id="input-15" />
+					<label class="input__label input__label--minoru" for="input-15">
+						<span class="input__label-content input__label-content--minoru">Telefone 1</span>
+					</label>
+        </span>
+        <span class="input input--minoru">
+					<input class="input__field input__field--minoru" type="text" id="input-15" />
+					<label class="input__label input__label--minoru" for="input-15">
+						<span class="input__label-content input__label-content--minoru">Telefone 2</span>
+					</label>
+        </span>
+        <span class="input input--minoru" style="width:40%;">
+					<input class="input__field input__field--minoru" type="text" id="input-15" />
+					<label class="input__label input__label--minoru" for="input-15">
+						<span class="input__label-content input__label-content--minoru">CEP</span>
+					</label>
+        </span>
+        <span class="input input--minoru" style="width:40%;">
+					<input class="input__field input__field--minoru" type="text" id="input-15" />
+					<label class="input__label input__label--minoru" for="input-15">
+						<span class="input__label-content input__label-content--minoru">Bairro</span>
+					</label>
+        </span>
       </div>
+      <span class="voltar" onclick="step(1);"><i class="fa fa-arrow-left"></i></span>
+      <span class="enviar" onclick="step(3);"><i class="fa fa-arrow-right"></i></span>
     </div>
     <div id="animal1" class="animal a1">
 
