@@ -13,31 +13,36 @@
       <div class="form">
         <span class="cadastro">Cadastro usuário (1/2)</span>
         <span class="input input--minoru">
-					<input class="input__field input__field--minoru" type="text" id="input-15" />
+          <span class="error" id="e_email">Email está incorreto.</span>
+					<input class="input__field input__field--minoru" type="text" id="email" />
 					<label class="input__label input__label--minoru" for="input-15">
 						<span class="input__label-content input__label-content--minoru">Email</span>
 					</label>
         </span>
         <span class="input input--minoru">
-					<input class="input__field input__field--minoru" type="text" id="input-15" />
+          <span class="error" id="e_senha">Senha curta demais. (Min: 6)</span>
+					<input class="input__field input__field--minoru" type="password" id="senha" />
 					<label class="input__label input__label--minoru" for="input-15">
-						<span class="input__label-content input__label-content--minoru">Senha</span>
+						<span class="input__label-content input__label-content--minoru" id="">Senha</span>
 					</label>
         </span>
         <span class="input input--minoru">
-					<input class="input__field input__field--minoru" type="text" id="input-15" />
+          <span class="error" id="e_senha2">As senhas não batem.</span>
+					<input class="input__field input__field--minoru" type="password" id="senha2" />
 					<label class="input__label input__label--minoru" for="input-15">
-						<span class="input__label-content input__label-content--minoru">Confirmar senha</span>
+						<span class="input__label-content input__label-content--minoru" id="">Confirmar senha</span>
 					</label>
         </span>
         <span class="input input--minoru">
-					<input class="input__field input__field--minoru" type="text" id="input-15" />
+          <span class="error" id="e_nome">Formato de nome inesperado.  (Min: 5, Max: 100)</span>
+					<input class="input__field input__field--minoru" type="text" id="nome" />
 					<label class="input__label input__label--minoru" for="input-15">
-						<span class="input__label-content input__label-content--minoru">Nome Completo</span>
+						<span class="input__label-content input__label-content--minoru" id="">Nome Completo</span>
 					</label>
         </span>
         <span class="input input--minoru">
-          <select style="height:36.6px; width:100%;">
+          <span class="error" id="">;</span>
+          <select style="height:36.6px; width:100%;" id="sexo">
             <option value="m">Masculino</option>
             <option value="f">Feminino</option>
             <option value="o">Outros/Indefinido</option>
@@ -53,43 +58,50 @@
       <div class="form">
         <span class="cadastro">Cadastro usuário (2/2)</span>
         <span class="input input--minoru">
-					<input class="input__field input__field--minoru" type="text" id="input-15" />
+          <span class="error" id="e_endereco">Formato do endereço inesperado.  (Min: 6)</span>
+					<input class="input__field input__field--minoru" type="text" id="endereco" />
 					<label class="input__label input__label--minoru" for="input-15">
 						<span class="input__label-content input__label-content--minoru">Endereço</span>
 					</label>
         </span>
         <span class="input input--minoru" style="width:40%;">
-					<input class="input__field input__field--minoru" type="text" id="input-15" />
+          <span class="error min" id="e_numero">Formato incorreto.  (Min: 1, Max: 6)</span>
+					<input class="input__field input__field--minoru" type="text" id="numero" />
 					<label class="input__label input__label--minoru" for="input-15">
 						<span class="input__label-content input__label-content--minoru">Nº</span>
 					</label>
         </span>
         <span class="input input--minoru" style="width:40%;">
-					<input class="input__field input__field--minoru" type="text" id="input-15" />
+          <span class="error min" id="e_complemento">Máximo de caracteres excedido.  (Max: 60)</span>
+					<input class="input__field input__field--minoru" type="text" id="complemento" />
 					<label class="input__label input__label--minoru" for="input-15">
 						<span class="input__label-content input__label-content--minoru">Complemento</span>
 					</label>
         </span>
         <span class="input input--minoru">
-					<input class="input__field input__field--minoru" type="text" id="input-15" />
+          <span class="error" id="e_telefone1">Ex: 1125794972 (Min/Max: 10)</span>
+					<input class="input__field input__field--minoru" type="text" id="telefone1" />
 					<label class="input__label input__label--minoru" for="input-15">
-						<span class="input__label-content input__label-content--minoru">Telefone 1</span>
+						<span class="input__label-content input__label-content--minoru">Telefone Residencial (só numeros)</span>
 					</label>
         </span>
         <span class="input input--minoru">
-					<input class="input__field input__field--minoru" type="text" id="input-15" />
+          <span class="error" id="e_telefone2">Ex: 11925794972 (Min: 10, Max: 11)</span>
+					<input class="input__field input__field--minoru" type="text" id="telefone2" />
 					<label class="input__label input__label--minoru" for="input-15">
-						<span class="input__label-content input__label-content--minoru">Telefone 2</span>
+						<span class="input__label-content input__label-content--minoru">Telefone Celular (só numeros)</span>
 					</label>
         </span>
         <span class="input input--minoru" style="width:40%;">
-					<input class="input__field input__field--minoru" type="text" id="input-15" />
+          <span class="error min" id="e_cep">Ex: 03258000 (Min/Max: 8)</span>
+					<input class="input__field input__field--minoru" type="text" id="cep" />
 					<label class="input__label input__label--minoru" for="input-15">
-						<span class="input__label-content input__label-content--minoru">CEP</span>
+						<span class="input__label-content input__label-content--minoru">CEP (sem hifen)</span>
 					</label>
         </span>
         <span class="input input--minoru" style="width:40%">
-					<input class="input__field input__field--minoru" type="text" id="input-15" />
+          <span class="error min" id="e_bairro">Máximo excedido.  (Max: 75)</span>
+					<input class="input__field input__field--minoru" type="text" id="bairro" />
 					<label class="input__label input__label--minoru" for="input-15">
 						<span class="input__label-content input__label-content--minoru">Bairro</span>
 					</label>
@@ -144,19 +156,203 @@
 					</label>
         </span>
       </div>
-      <span class="voltar" onclick="step(1);"><i class="fa fa-plus"></i></span>
-      <span class="enviar" onclick="step(3);"><i class="fa fa-check"></i></span>
+      <span class="voltar" onclick="step(4);"><i class="fa fa-plus"></i></span>
+      <span class="enviar" onclick="step(9);"><i class="fa fa-check"></i></span>
     </div>
     <div id="animal2" class="animal a2">
-
+      <div class="form">
+        <span class="cadastro">Cadastro animais (2/5)</span>
+        <span class="input input--minoru">
+					<input class="input__field input__field--minoru" type="text" id="input-15" />
+					<label class="input__label input__label--minoru" for="input-15">
+						<span class="input__label-content input__label-content--minoru">Nome</span>
+					</label>
+        </span>
+        <span class="input input--minoru">
+          <select style="height:36.6px; width:100%;">
+            <option value="0">Cachorro</option>
+            <option value="1">Gato</option>
+            <option value="2">cavalo</option>
+          </select>
+          <label class="input__label input__label--minoru" for="input-15">
+            <span class="input__label-content input__label-content--minoru">Animal</span>
+          </label>
+        </span>
+        <span class="input input--minoru">
+          <select style="height:36.6px; width:100%;">
+            <option value="0">Shitzu</option>
+            <option value="1">Bulldog</option>
+            <option value="2">Sua mãe</option>
+          </select>
+          <label class="input__label input__label--minoru" for="input-15">
+            <span class="input__label-content input__label-content--minoru">Raça</span>
+          </label>
+        </span>
+        <span class="input input--minoru">
+          <select style="height:36.6px; width:100%;">
+            <option value="0">Pequeno</option>
+            <option value="1">Medio</option>
+            <option value="2">Sua mãe</option>
+          </select>
+          <label class="input__label input__label--minoru" for="input-15">
+            <span class="input__label-content input__label-content--minoru">Porte</span>
+          </label>
+        </span>
+        <span class="input input--minoru">
+					<input class="input__field input__field--minoru" type="text" id="input-15" style="height:73.2px" />
+					<label class="input__label input__label--minoru" for="input-15">
+						<span class="input__label-content input__label-content--minoru">Observações</span>
+					</label>
+        </span>
+      </div>
+      <span class="voltar" onclick="step(5);"><i class="fa fa-plus"></i></span>
+      <span class="enviar" onclick="step(9);"><i class="fa fa-check"></i></span>
     </div>
     <div id="animal3" class="animal a3">
+      <div class="form">
+        <span class="cadastro">Cadastro animais (3/5)</span>
+        <span class="input input--minoru">
+					<input class="input__field input__field--minoru" type="text" id="input-15" />
+					<label class="input__label input__label--minoru" for="input-15">
+						<span class="input__label-content input__label-content--minoru">Nome</span>
+					</label>
+        </span>
+        <span class="input input--minoru">
+          <select style="height:36.6px; width:100%;">
+            <option value="0">Cachorro</option>
+            <option value="1">Gato</option>
+            <option value="2">cavalo</option>
+          </select>
+          <label class="input__label input__label--minoru" for="input-15">
+            <span class="input__label-content input__label-content--minoru">Animal</span>
+          </label>
+        </span>
+        <span class="input input--minoru">
+          <select style="height:36.6px; width:100%;">
+            <option value="0">Shitzu</option>
+            <option value="1">Bulldog</option>
+            <option value="2">Sua mãe</option>
+          </select>
+          <label class="input__label input__label--minoru" for="input-15">
+            <span class="input__label-content input__label-content--minoru">Raça</span>
+          </label>
+        </span>
+        <span class="input input--minoru">
+          <select style="height:36.6px; width:100%;">
+            <option value="0">Pequeno</option>
+            <option value="1">Medio</option>
+            <option value="2">Sua mãe</option>
+          </select>
+          <label class="input__label input__label--minoru" for="input-15">
+            <span class="input__label-content input__label-content--minoru">Porte</span>
+          </label>
+        </span>
+        <span class="input input--minoru">
+					<input class="input__field input__field--minoru" type="text" id="input-15" style="height:73.2px" />
+					<label class="input__label input__label--minoru" for="input-15">
+						<span class="input__label-content input__label-content--minoru">Observações</span>
+					</label>
+        </span>
+      </div>
+      <span class="voltar" onclick="step(6);"><i class="fa fa-plus"></i></span>
+      <span class="enviar" onclick="step(9);"><i class="fa fa-check"></i></span>
     </div>
     <div id="animal4" class="animal a4">
-
+      <div class="form">
+        <span class="cadastro">Cadastro animais (4/5)</span>
+        <span class="input input--minoru">
+					<input class="input__field input__field--minoru" type="text" id="input-15" />
+					<label class="input__label input__label--minoru" for="input-15">
+						<span class="input__label-content input__label-content--minoru">Nome</span>
+					</label>
+        </span>
+        <span class="input input--minoru">
+          <select style="height:36.6px; width:100%;">
+            <option value="0">Cachorro</option>
+            <option value="1">Gato</option>
+            <option value="2">cavalo</option>
+          </select>
+          <label class="input__label input__label--minoru" for="input-15">
+            <span class="input__label-content input__label-content--minoru">Animal</span>
+          </label>
+        </span>
+        <span class="input input--minoru">
+          <select style="height:36.6px; width:100%;">
+            <option value="0">Shitzu</option>
+            <option value="1">Bulldog</option>
+            <option value="2">Sua mãe</option>
+          </select>
+          <label class="input__label input__label--minoru" for="input-15">
+            <span class="input__label-content input__label-content--minoru">Raça</span>
+          </label>
+        </span>
+        <span class="input input--minoru">
+          <select style="height:36.6px; width:100%;">
+            <option value="0">Pequeno</option>
+            <option value="1">Medio</option>
+            <option value="2">Sua mãe</option>
+          </select>
+          <label class="input__label input__label--minoru" for="input-15">
+            <span class="input__label-content input__label-content--minoru">Porte</span>
+          </label>
+        </span>
+        <span class="input input--minoru">
+					<input class="input__field input__field--minoru" type="text" id="input-15" style="height:73.2px" />
+					<label class="input__label input__label--minoru" for="input-15">
+						<span class="input__label-content input__label-content--minoru">Observações</span>
+					</label>
+        </span>
+      </div>
+      <span class="voltar" onclick="step(7);"><i class="fa fa-plus"></i></span>
+      <span class="enviar" onclick="step(9);"><i class="fa fa-check"></i></span>
     </div>
     <div id="animal5" class="animal a5">
-
+      <div class="form">
+        <span class="cadastro">Cadastro animais (5/5)</span>
+        <span class="input input--minoru">
+					<input class="input__field input__field--minoru" type="text" id="input-15" />
+					<label class="input__label input__label--minoru" for="input-15">
+						<span class="input__label-content input__label-content--minoru">Nome</span>
+					</label>
+        </span>
+        <span class="input input--minoru">
+          <select style="height:36.6px; width:100%;">
+            <option value="0">Cachorro</option>
+            <option value="1">Gato</option>
+            <option value="2">cavalo</option>
+          </select>
+          <label class="input__label input__label--minoru" for="input-15">
+            <span class="input__label-content input__label-content--minoru">Animal</span>
+          </label>
+        </span>
+        <span class="input input--minoru">
+          <select style="height:36.6px; width:100%;">
+            <option value="0">Shitzu</option>
+            <option value="1">Bulldog</option>
+            <option value="2">Sua mãe</option>
+          </select>
+          <label class="input__label input__label--minoru" for="input-15">
+            <span class="input__label-content input__label-content--minoru">Raça</span>
+          </label>
+        </span>
+        <span class="input input--minoru">
+          <select style="height:36.6px; width:100%;">
+            <option value="0">Pequeno</option>
+            <option value="1">Medio</option>
+            <option value="2">Sua mãe</option>
+          </select>
+          <label class="input__label input__label--minoru" for="input-15">
+            <span class="input__label-content input__label-content--minoru">Porte</span>
+          </label>
+        </span>
+        <span class="input input--minoru">
+					<input class="input__field input__field--minoru" type="text" id="input-15" style="height:73.2px" />
+					<label class="input__label input__label--minoru" for="input-15">
+						<span class="input__label-content input__label-content--minoru">Observações</span>
+					</label>
+        </span>
+      </div>
+      <span class="enviar" onclick="step(9);"><i class="fa fa-check"></i></span>
     </div>
     <div id="success" class="success">
     </div>

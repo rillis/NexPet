@@ -235,8 +235,16 @@ background-size: contain;
    #caixa{
    height:30%;
    }
-
-input[type="password"] {
+	 .error{
+		 font-family:Ubuntu;
+		 color:red;
+		 visibility: hidden;
+		 transition: 0.2s;
+	 }
+	 .min{
+		 font-size: 12px;
+	 }
+.pass {
   width: 350px;
   padding: 20px 0px;
   background: transparent;
@@ -381,7 +389,6 @@ input[type="submit"]:hover {
 	.input{
 		margin:0px !important;
 		margin-left: 5% !important;
-		margin-top: 10px !important;
 	}
 	.enviar{
 		padding:15px;
