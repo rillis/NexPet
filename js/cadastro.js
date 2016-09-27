@@ -151,7 +151,7 @@ function image(lol) {
 	imageSelected=false;
 	}else{
 	imageSelected=true;
-	document.getElementById("fotopicker").style.backgroundColor = "#51B14A";
+	document.getElementById("fotopicker").style.backgroundColor = "#51B14A"; 
 	}
 }
 function visibility(x,y){

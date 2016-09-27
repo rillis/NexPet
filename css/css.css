@@ -18,7 +18,7 @@
 	}
 	#fotopicker{
 		transition: 0.2s;
-		cursor: pointer;
+		cursor: pointer; 
 	}
 	body{
 		overflow-x: hidden !important;
