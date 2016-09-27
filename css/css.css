@@ -1,3 +1,25 @@
+	form{
+		margin-bottom:0px;
+		margin-left:0px;
+		display: inherit;
+	}
+	label#picture input[type="file"] {
+	position: fixed;
+	top: -1000px;
+	}
+	.spanbtn{
+		position: absolute;
+		top:18px;
+		left:0px;
+		height: 20px;
+		width: 100%;
+		background-color:#fff;
+		font-family: Ubuntu;
+	}
+	#fotopicker{
+		transition: 0.2s;
+		cursor: pointer;
+	}
 	body{
 		overflow-x: hidden !important;
 	}

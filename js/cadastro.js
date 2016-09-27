@@ -1,3 +1,4 @@
+var imageSelected = false;
 function step(n){
   if(n==1){
       document.getElementById('step1').style.top='0px';
@@ -145,6 +146,14 @@ function boxShadow(x,y){
     document.getElementById(y).style.boxShadow = '0px 0px 14px 1px rgba(255,0,0,1)';
   }
 }
+function image(lol) {
+	if(lol==null){
+	imageSelected=false;
+	}else{
+	imageSelected=true;
+	document.getElementById("fotopicker").style.backgroundColor = "#51B14A";
+	}
+}
 function visibility(x,y){
   if(x==0){
     document.getElementById(y).style.visibility = 'hidden';
@@ -190,6 +199,10 @@ function validate(n){
       visibility(1,"e_nome");
       error=true;
     }
+	if(!imageSelected){
+		document.getElementById("fotopicker").style.backgroundColor = "#D63A3A";
+		error=true;
+	}
 
     if (error) {
       return false;
@@ -251,7 +264,7 @@ function validate(n){
       visibility(1,"e_cep");
       error=true;
     }
-    if(bairro.length > 75 || bairro.toLowerCase().match(/[a-z]/i)){
+    if(bairro.length > 75 || bairro.length <= 1 ){
       boxShadow(1,"bairro");
       visibility(1,"e_bairro");
       error=true;

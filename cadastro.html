@@ -1,4 +1,4 @@
-<html>
+﻿<html>
   <head>
     <title>NexPet</title>
     <link rel="stylesheet" type="text/css" href="css/css.css" />
@@ -8,48 +8,55 @@
     <script src="js/cadastro.js"></script>
   </head>
   <body style="overflow: hidden;">
-
+	<form method="POST" action="cadastro.php">
     <div id="step1" class="step1">
       <div class="form">
         <span class="cadastro">Cadastro usuário (1/2)</span>
         <span class="input input--minoru">
           <span class="error" id="e_email">Email está incorreto.</span>
-					<input class="input__field input__field--minoru" type="text" id="email" />
-					<label class="input__label input__label--minoru" for="input-15">
+					<input class="input__field input__field--minoru" type="text" id="email" name="email" />
+					<label class="input__label input__label--minoru" for="email">
 						<span class="input__label-content input__label-content--minoru">Email</span>
 					</label>
         </span>
         <span class="input input--minoru">
           <span class="error" id="e_senha">Senha curta demais. (Min: 6)</span>
-					<input class="input__field input__field--minoru" type="password" id="senha" />
-					<label class="input__label input__label--minoru" for="input-15">
+					<input class="input__field input__field--minoru" type="password" id="senha" name="senha" />
+					<label class="input__label input__label--minoru" for="senha">
 						<span class="input__label-content input__label-content--minoru" id="">Senha</span>
 					</label>
         </span>
         <span class="input input--minoru">
           <span class="error" id="e_senha2">As senhas não batem.</span>
-					<input class="input__field input__field--minoru" type="password" id="senha2" />
-					<label class="input__label input__label--minoru" for="input-15">
+					<input class="input__field input__field--minoru" type="password" id="senha2" name="senha2" />
+					<label class="input__label input__label--minoru" for="senha2">
 						<span class="input__label-content input__label-content--minoru" id="">Confirmar senha</span>
 					</label>
         </span>
         <span class="input input--minoru">
           <span class="error" id="e_nome">Formato de nome inesperado.  (Min: 5, Max: 100)</span>
-					<input class="input__field input__field--minoru" type="text" id="nome" />
-					<label class="input__label input__label--minoru" for="input-15">
+					<input class="input__field input__field--minoru" type="text" id="nome" name="nome" />
+					<label class="input__label input__label--minoru" for="nome">
 						<span class="input__label-content input__label-content--minoru" id="">Nome Completo</span>
 					</label>
         </span>
-        <span class="input input--minoru">
+        <span class="input input--minoru" style="width:40%">
           <span class="error" id="">;</span>
-          <select style="height:36.6px; width:100%;" id="sexo">
-            <option value="m">Masculino</option>
-            <option value="f">Feminino</option>
-            <option value="o">Outros/Indefinido</option>
+          <select style="height:36.6px; width:100%;" id="sexo" name="sexo">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outros/Indefinido</option>
           </select>
-					<label class="input__label input__label--minoru" for="input-15">
+					<label class="input__label input__label--minoru" for="sexo">
 						<span class="input__label-content input__label-content--minoru">Sexo</span>
 					</label>
+        </span>
+		<span class="input input--minoru" style="width:40%">
+		<span class="error" id="">Escolha um foto.</span>
+			<label id="picture" class="Ubuntu">
+			<span id="fotopicker" class="spanbtn">&nbsp Escolha uma foto.</span>
+			<input type="file" name="file" id="file" accept="image/x-png, image/gif, image/jpeg" onchange="image(this.value);"></input>
+			</label>
         </span>
       </div>
       <span class="enviar" onclick="step(2);"><i class="fa fa-arrow-right"></i></span>
@@ -59,50 +66,50 @@
         <span class="cadastro">Cadastro usuário (2/2)</span>
         <span class="input input--minoru">
           <span class="error" id="e_endereco">Formato do endereço inesperado.  (Min: 6)</span>
-					<input class="input__field input__field--minoru" type="text" id="endereco" />
-					<label class="input__label input__label--minoru" for="input-15">
+					<input class="input__field input__field--minoru" type="text" id="endereco" name="endereco" />
+					<label class="input__label input__label--minoru" for="endereco">
 						<span class="input__label-content input__label-content--minoru">Endereço</span>
 					</label>
         </span>
         <span class="input input--minoru" style="width:40%;">
           <span class="error min" id="e_numero">Formato incorreto.  (Min: 1, Max: 6)</span>
-					<input class="input__field input__field--minoru" type="text" id="numero" />
-					<label class="input__label input__label--minoru" for="input-15">
+					<input class="input__field input__field--minoru" type="text" id="numero" name="numero" />
+					<label class="input__label input__label--minoru" for="numero">
 						<span class="input__label-content input__label-content--minoru">Nº</span>
 					</label>
         </span>
         <span class="input input--minoru" style="width:40%;">
           <span class="error min" id="e_complemento">Máximo de caracteres excedido.  (Max: 60)</span>
-					<input class="input__field input__field--minoru" type="text" id="complemento" />
-					<label class="input__label input__label--minoru" for="input-15">
+					<input class="input__field input__field--minoru" type="text" id="complemento" name="complemento" />
+					<label class="input__label input__label--minoru" for="complemento">
 						<span class="input__label-content input__label-content--minoru">Complemento</span>
 					</label>
         </span>
         <span class="input input--minoru">
           <span class="error" id="e_telefone1">Ex: 1125794972 (Min/Max: 10)</span>
-					<input class="input__field input__field--minoru" type="text" id="telefone1" />
-					<label class="input__label input__label--minoru" for="input-15">
+					<input class="input__field input__field--minoru" type="text" id="telefone1" name="telefone1" />
+					<label class="input__label input__label--minoru" for="telefone1">
 						<span class="input__label-content input__label-content--minoru">Telefone Residencial (só numeros)</span>
 					</label>
         </span>
         <span class="input input--minoru">
           <span class="error" id="e_telefone2">Ex: 11925794972 (Min: 10, Max: 11)</span>
-					<input class="input__field input__field--minoru" type="text" id="telefone2" />
-					<label class="input__label input__label--minoru" for="input-15">
+					<input class="input__field input__field--minoru" type="text" id="telefone2" name="telefone2" />
+					<label class="input__label input__label--minoru" for="telefone2">
 						<span class="input__label-content input__label-content--minoru">Telefone Celular (só numeros)</span>
 					</label>
         </span>
         <span class="input input--minoru" style="width:40%;">
           <span class="error min" id="e_cep">Ex: 03258000 (Min/Max: 8)</span>
-					<input class="input__field input__field--minoru" type="text" id="cep" />
-					<label class="input__label input__label--minoru" for="input-15">
+					<input class="input__field input__field--minoru" type="text" id="cep" name="cep" />
+					<label class="input__label input__label--minoru" for="cep">
 						<span class="input__label-content input__label-content--minoru">CEP (sem hifen)</span>
 					</label>
         </span>
         <span class="input input--minoru" style="width:40%">
           <span class="error min" id="e_bairro">Máximo excedido.  (Max: 75)</span>
-					<input class="input__field input__field--minoru" type="text" id="bairro" />
-					<label class="input__label input__label--minoru" for="input-15">
+					<input class="input__field input__field--minoru" type="text" id="bairro" name="bairro" />
+					<label class="input__label input__label--minoru" for="bairro">
 						<span class="input__label-content input__label-content--minoru">Bairro</span>
 					</label>
         </span>
@@ -354,6 +361,7 @@
       </div>
       <span class="enviar" onclick="step(9);"><i class="fa fa-check"></i></span>
     </div>
+	</form>
     <div id="success" class="success">
     </div>
 
