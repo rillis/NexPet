@@ -3,7 +3,27 @@
 		margin-left:0px;
 		display: inherit;
 	}
-	label#picture input[type="file"] {
+	label#picture input[type="file"]{
+	position: fixed;
+	top: -1000px;
+	}
+	label#labelanimal1 input[type="file"]{
+	position: fixed;
+	top: -1000px;
+	}
+	label#labelanimal2 input[type="file"]{
+	position: fixed;
+	top: -1000px;
+	}
+	label#labelanimal3 input[type="file"]{
+	position: fixed;
+	top: -1000px;
+	}
+	label#labelanimal4 input[type="file"]{
+	position: fixed;
+	top: -1000px;
+	}
+	label#labelanimal5 input[type="file"]{
 	position: fixed;
 	top: -1000px;
 	}
@@ -15,8 +35,9 @@
 		width: 100%;
 		background-color:#fff;
 		font-family: Ubuntu;
+		cursor: pointer;
 	}
-	#fotopicker{
+	#fotopicker,#fotopicker2,#fotopicker3,#fotopicker4,#fotopicker5,#fotopicker6{
 		transition: 0.2s;
 		cursor: pointer; 
 	}
