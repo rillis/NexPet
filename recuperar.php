@@ -1,7 +1,7 @@
 ﻿<html>
 <head>
 <title> Recupere sua Senha </title>
-<link rel="stylesheet" type="text/css" href="css.css" />
+<link rel="stylesheet" type="text/css" href="css/css.css" />
 </head>
 <body>
 <div id = "logo">

@@ -3,6 +3,25 @@
 		margin-left:0px;
 		display: inherit;
 	}
+	.message{
+		position:absolute;
+		bottom:0px;
+		left: 0px;
+		height: 30px;
+		line-height: 30px;
+		vertical-align: middle;
+		font-family: Ubuntu;
+		font-weight: bold;
+		width: 100%;
+		background-color: #fff;
+		text-align: center;
+	}
+	.fail{
+		background-color: #D63A3A;
+	}
+	.ok{
+		background-color: #51B14A;
+	}
 	label#picture input[type="file"]{
 	position: fixed;
 	top: -1000px;
@@ -39,7 +58,7 @@
 	}
 	#fotopicker,#fotopicker2,#fotopicker3,#fotopicker4,#fotopicker5,#fotopicker6{
 		transition: 0.2s;
-		cursor: pointer; 
+		cursor: pointer;
 	}
 	body{
 		overflow-x: hidden !important;

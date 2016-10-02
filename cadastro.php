@@ -1,4 +1,4 @@
-﻿<?php 
+﻿<?php
 	include 'include/require.php';
 ?>
 <html>
@@ -10,32 +10,6 @@
     <link rel="stylesheet" type="text/css" href="css/set1.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/cadastro.js"></script>
-		<?php
-		if(isset($_GET['test'])){
-				echo "
-				<script>
-				$( document ).ready(function() {
-				document.getElementById('step1').style.top='-300%';
-				document.getElementById('step1').style.left='-100%';
-				document.getElementById('step2').style.top='-200%';
-				document.getElementById('step2').style.left='-100%';
-				document.getElementById('animal1').style.top='-300%';
-				document.getElementById('animal1').style.left='0px';
-				document.getElementById('animal2').style.top='-200%';
-				document.getElementById('animal2').style.left='0px';
-				document.getElementById('animal3').style.top='-100%';
-				document.getElementById('animal3').style.left='0px';
-				document.getElementById('animal4').style.top='0px';
-				document.getElementById('animal4').style.left='0px';
-				document.getElementById('animal5').style.top='100%';
-				document.getElementById('animal5').style.left='0px';
-				document.getElementById('success').style.top='200%';
-				document.getElementById('success').style.left='0px';
-				});
-				</script>
-				";
-	}
-	?>
   </head>
   <body style="overflow: hidden;">
 	<form enctype="multipart/form-data" method="POST" action="functions.php" name="myform">
@@ -50,7 +24,7 @@
 					</label>
         </span>
         <span class="input input--minoru">
-          <span class="error" id="e_senha">Senha curta demais. (Min: 6)</span>
+          <span class="error" id="e_senha">Senha curta demais. (Min: 8)</span>
 					<input class="input__field input__field--minoru" type="password" id="senha" name="senha" />
 					<label class="input__label input__label--minoru" for="senha">
 						<span class="input__label-content input__label-content--minoru" id="">Senha</span>
@@ -84,10 +58,18 @@
 		<span class="input input--minoru" style="width:40%">
 		<span class="error" id="">Escolha um foto.</span>
 			<label id="picture" class="Ubuntu">
-			<span id="fotopicker" class="spanbtn">&nbsp Escolha uma foto.</span> 
+			<span id="fotopicker" class="spanbtn">&nbsp Escolha uma foto.</span>
 			<input type="file" name="file" id="file" accept="image/x-png, image/gif, image/jpeg" onchange="image(this.value);"></input>
 			</label>
         </span>
+				<?php
+				if(isset($_GET['fail'])){
+					echo '<span class="message fail Ubuntu">Não foi possivel completar seu cadastro!</span>';
+				}else if(isset($_GET['success'])){
+					echo '<span class="message ok Ubuntu">Cadastro realizado com sucesso!</span>';
+				}
+
+				?>
       </div>
       <span class="enviar" onclick="step(2,0);"><i class="fa fa-arrow-right"></i></span>
     </div>
@@ -187,9 +169,9 @@
 					$raca = $linha['raca'];
 					?>
 					<option value="<?php echo $raca; ?>"><?php echo $raca; ?></option>
-					<?php						
+					<?php
 				}while($linha = mysql_fetch_assoc($dados));
-				
+
 				}else{}
 				?>
           </select>
@@ -226,7 +208,7 @@
 		<span class="input input--minoru" style="width:40%">
 		<span class="error" id="">Escolha um foto.</span>
 			<label id="labelanimal1" class="Ubuntu">
-			<span id="fotopicker2" class="spanbtn">&nbsp Escolha uma foto.</span> 
+			<span id="fotopicker2" class="spanbtn">&nbsp Escolha uma foto.</span>
 			<input type="file" name="file1" id="file1" accept="image/x-png, image/gif, image/jpeg" onchange="imageAnimal1(this.value);"></input>
 			</label>
         </span>
@@ -274,9 +256,9 @@
 					$raca = $linha['raca'];
 					?>
 					<option value="<?php echo $raca; ?>"><?php echo $raca; ?></option>
-					<?php						
+					<?php
 				}while($linha = mysql_fetch_assoc($dados));
-				
+
 				}else{}
 				?>
           </select>
@@ -313,7 +295,7 @@
 		<span class="input input--minoru" style="width:40%">
 		<span class="error" id="">Escolha um foto.</span>
 			<label id="labelanimal2" class="Ubuntu">
-			<span id="fotopicker3" class="spanbtn">&nbsp Escolha uma foto.</span> 
+			<span id="fotopicker3" class="spanbtn">&nbsp Escolha uma foto.</span>
 			<input type="file" name="file2" id="file2" accept="image/x-png, image/gif, image/jpeg" onchange="imageAnimal2(this.value);"></input>
 			</label>
         </span>
@@ -361,9 +343,9 @@
 					$raca = $linha['raca'];
 					?>
 					<option value="<?php echo $raca; ?>"><?php echo $raca; ?></option>
-					<?php						
+					<?php
 				}while($linha = mysql_fetch_assoc($dados));
-				
+
 				}else{}
 				?>
           </select>
@@ -400,7 +382,7 @@
 		<span class="input input--minoru" style="width:40%">
 		<span class="error" id="">Escolha um foto.</span>
 			<label id="labelanimal3" class="Ubuntu">
-			<span id="fotopicker4" class="spanbtn">&nbsp Escolha uma foto.</span> 
+			<span id="fotopicker4" class="spanbtn">&nbsp Escolha uma foto.</span>
 			<input type="file" name="file3" id="file3" accept="image/x-png, image/gif, image/jpeg" onchange="imageAnimal3(this.value);"></input>
 			</label>
         </span>
@@ -448,9 +430,9 @@
 					$raca = $linha['raca'];
 					?>
 					<option value="<?php echo $raca; ?>"><?php echo $raca; ?></option>
-					<?php						
+					<?php
 				}while($linha = mysql_fetch_assoc($dados));
-				
+
 				}else{}
 				?>
           </select>
@@ -487,7 +469,7 @@
 		<span class="input input--minoru" style="width:40%">
 		<span class="error" id="">Escolha um foto.</span>
 			<label id="labelanimal4" class="Ubuntu">
-			<span id="fotopicker5" class="spanbtn">&nbsp Escolha uma foto.</span> 
+			<span id="fotopicker5" class="spanbtn">&nbsp Escolha uma foto.</span>
 			<input type="file" name="file4" id="file4" accept="image/x-png, image/gif, image/jpeg" onchange="imageAnimal4(this.value);"></input>
 			</label>
         </span>
@@ -535,9 +517,9 @@
 					$raca = $linha['raca'];
 					?>
 					<option value="<?php echo $raca; ?>"><?php echo $raca; ?></option>
-					<?php						
+					<?php
 				}while($linha = mysql_fetch_assoc($dados));
-				
+
 				}else{}
 				?>
           </select>
@@ -574,7 +556,7 @@
 		<span class="input input--minoru" style="width:40%">
 		<span class="error" id="">Escolha um foto.</span>
 			<label id="labelanimal5" class="Ubuntu">
-			<span id="fotopicker6" class="spanbtn">&nbsp Escolha uma foto.</span> 
+			<span id="fotopicker6" class="spanbtn">&nbsp Escolha uma foto.</span>
 			<input type="file" name="file5" id="file5" accept="image/x-png, image/gif, image/jpeg" onchange="imageAnimal5(this.value);"></input>
 			</label>
         </span>
